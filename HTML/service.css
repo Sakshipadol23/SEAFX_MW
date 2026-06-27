@@ -184,7 +184,7 @@
 .cta-section {
   position: relative;
   min-height: 80vh;
-  background: url("../ASSETS/About.mp4") center/cover no-repeat;
+  background: url("ASSETS/About.mp4") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
