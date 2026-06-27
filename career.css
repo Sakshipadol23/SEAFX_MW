@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Header container */
+  header {
+    /*background-color:gray; /* light blue */
+    padding: 15px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+    width: 100%;
+    z-index: 1000;
+
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+
+  /* Logo */
+  .logo img {
+    height: 74px;
+    width: 183px;
+    background-color: #f8fafc;
+  }
+
+  /* Navigation menu */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  nav ul li a:hover {
+    color: #00bfff;
+  }
+
+  /* Get a Quote button */
+  .quote-btn {
+    background-color: #00bfff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .quote-btn:hover {
+    background-color: #009fd4;
+  }
+
+/* Background video */
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* ===== CAREER SECTION ===== */
+
+.career-section {
+  min-height: 100vh;
+  /*background: linear-gradient(180deg, #020617, #0b1220);*/
+  padding: 120px 8% 80px;
+  color: #fff;
+}
+
+.career-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* LEFT */
+.career-left h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.career-left p {
+  font-size: 18px;
+  opacity: 0.8;
+  margin-bottom: 50px;
+}
+
+.career-illustration img {
+  max-width: 380px;
+  animation: float 6s ease-in-out infinite;
+}
+
+/* FLOAT ANIMATION */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+/* RIGHT FORM */
+.career-right {
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(10px);
+  padding: 50px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.08);
+  animation: slideUp 0.8s ease forwards;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.career-form {
+  width: 100%;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.form-group.full {
+  grid-column: span 2;
+}
+
+.form-group label {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+  padding: 8px 0;
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 2px 0 #38bdf8;
+}
+
+/* BUTTON */
+.send-btn {
+  margin-top: 20px;
+  padding: 12px 40px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  color: #020617;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.send-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(56,189,248,0.4);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .career-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .career-left h1 {
+    font-size: 42px;
+  }
+
+  .career-illustration img {
+    max-width: 260px;
+    margin-top: 40px;
+  }
+}
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width:768px){
+
+/* HEADER */
+
+header{
+padding:10px 20px;
+flex-direction:column;
+gap:10px;
+}
+
+.logo img{
+height:45px;
+width:auto;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+nav ul li a{
+font-size:16px;
+}
+
+.quote-btn{
+padding:8px 16px;
+font-size:14px;
+}
+
+/* CAREER SECTION */
+
+.career-section{
+padding:100px 20px 60px;
+}
+
+/* WRAPPER */
+
+.career-wrapper{
+grid-template-columns:1fr;
+gap:40px;
+text-align:center;
+}
+
+/* LEFT */
+
+.career-left h1{
+font-size:32px;
+}
+
+.career-left p{
+font-size:15px;
+margin-bottom:30px;
+}
+
+.career-illustration img{
+max-width:220px;
+margin:auto;
+}
+
+/* FORM */
+
+.career-right{
+padding:30px 20px;
+}
+
+/* FORM ROW */
+
+.form-row{
+grid-template-columns:1fr;
+gap:20px;
+}
+
+.form-group.full{
+grid-column:span 1;
+}
+
+.form-group input,
+.form-group textarea{
+font-size:14px;
+}
+
+/* BUTTON */
+
+.send-btn{
+padding:10px 30px;
+font-size:14px;
+}
+
+}

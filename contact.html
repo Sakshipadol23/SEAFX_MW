@@ -1,0 +1,85 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us | SEAFX</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+<!-- Background Video -->
+<video class="bg-video" autoplay muted loop playsinline>
+  <source src="../ASSETS/service background.mp4" type="video/mp4">
+</video>
+<!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="https://static.wixstatic.com/media/be6cfc_1935f9f674c146afb055707a285f2abf~mv2.png/v1/fill/w_183,h_74,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Seafx_Main_PNG.png" alt="SEAFX Multimedia Logo">
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="Career">Career</a></li>
+      </ul>
+    </nav>
+
+    <a href="contact.html" class="quote-btn">Get a Quote</a>
+  </header>
+<!-- Dark overlay -->
+<div class="overlay"></div>
+
+<section class="contact-section">
+  <div class="contact-card">
+
+    <h1>Contact Us</h1>
+    <p class="subtitle">Let’s connect and start something great.</p>
+
+    <!--<form>
+      <div class="row">
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+      </div>
+
+      <div class="row">
+        <input type="email" placeholder="Email *">
+        <input type="tel" placeholder="Phone">
+      </div>
+
+      <input type="text" placeholder="Subject">
+
+      <textarea placeholder="Leave us a message..."></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  -->
+<form action="save_contact.php" method="POST">
+<div class="row">
+  <input type="text" name="first_name" placeholder="First Name" required>
+  <input type="text" name="last_name" placeholder="Last Name" required>
+</div>
+
+<div class="row">
+  <input type="email" name="email" placeholder="Email *" required>
+  <input type="tel" name="phone" placeholder="Phone">
+</div>
+
+<input type="text" name="subject" placeholder="Subject">
+
+<textarea name="message" placeholder="Leave us a message..." required></textarea>
+
+<button type="submit">Send Message</button>
+</form>
+
+
+  </div>
+</section>
+
+</body>
+</html>

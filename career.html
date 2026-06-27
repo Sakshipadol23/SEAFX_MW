@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>career | SEAFX</title>
+  <link rel="stylesheet" href="career.css">
+</head>
+<body>
+
+<!-- Background Video -->
+<video class="bg-video" autoplay muted loop playsinline>
+  <source src="../ASSETS/service background.mp4" type="video/mp4">
+</video>
+<!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="https://static.wixstatic.com/media/be6cfc_1935f9f674c146afb055707a285f2abf~mv2.png/v1/fill/w_183,h_74,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Seafx_Main_PNG.png" alt="SEAFX Multimedia Logo">
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="career.html">Career</a></li>
+      </ul>
+    </nav>
+
+    <a href="contact.html" class="quote-btn">Get a Quote</a>
+  </header>
+<section class="career-section">
+  <div class="career-wrapper">
+
+    <!-- LEFT CONTENT -->
+    <div class="career-left">
+      <h1>Let’s Work<br>Together</h1>
+      <p>
+        We are looking for talented<br>
+        artists in all departments.
+      </p>
+
+      <div class="career-illustration">
+        <img src="../ASSETS/let-s-work-together.jpg" alt="Work Illustration">
+      </div>
+    </div>
+
+    <!-- RIGHT FORM -->
+    <div class="career-right">
+      <form method="POST" action="save_career.php">
+  <div class="form-row">
+    <div class="form-group">
+      <label>First Name</label>
+      <input type="text" name="first_name" required>
+    </div>
+    <div class="form-group">
+      <label>Last Name</label>
+      <input type="text" name="last_name" required>
+    </div>
+  </div>
+
+  <div class="form-group full">
+    <label>Email *</label>
+    <input type="email" name="email" required>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label>Desired Position</label>
+      <input type="text" name="position">
+    </div>
+    <div class="form-group">
+      <label>Department</label>
+      <input type="text" name="department">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label>CV Drive Link</label>
+      <input type="text" name="cv_link">
+    </div>
+    <div class="form-group">
+      <label>Years of Experience</label>
+      <input type="number" name="experience">
+    </div>
+  </div>
+
+  <div class="form-group full">
+    <label>Tell us about you</label>
+    <textarea name="message" rows="3"></textarea>
+  </div>
+
+  <button type="submit" name="submit" class="send-btn">Send</button>
+
+</form>
+    </div>
+
+  </div>
+</section>
+</body>
+</html>
+
+
