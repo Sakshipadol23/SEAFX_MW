@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seafx MW pvt.ltd</title>
+    <link rel="stylesheet" href="FAQ.css">
+</head>
+<body>
+<section class="faq-section">
+  <!-- Background Video -->
+  <video class="faq-bg-video" autoplay muted loop playsinline>
+    <source src="../ASSETS/FAQ Video.mp4" type="video/mp4">
+  </video>
+<!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="https://static.wixstatic.com/media/be6cfc_1935f9f674c146afb055707a285f2abf~mv2.png/v1/fill/w_183,h_74,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Seafx_Main_PNG.png" alt="SEAFX Multimedia Logo">
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="Career">Career</a></li>
+      </ul>
+    </nav>
+
+    <a href="contact.html" class="quote-btn">Get a Quote</a>
+  </header>
+  <div class="faq-overlay"></div>
+    <div class="faq-container">
+
+      <div class="faq-left">
+        <h1>FAQ</h1>
+        <span class="faq-subtitle">FAQs</span>
+
+        <div class="faq-item active">
+          <div class="faq-question">How do you work?</div>
+          <div class="faq-answer">
+            We keep our process transparent with you, once we get an understanding of your required work we get back with you our efforts and initial quotation of the work, then after getting on the same page we start our work and complete it within agreed deadline.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">How much it takes to complete the task?</div>
+          <div class="faq-answer">
+            It mostly depends on the type of the work, generally we provide you with a deadline that we stand for the completion of the work.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">What are your areas of work?</div>
+          <div class="faq-answer">
+            We cover a wide range of virtual production like Animation, Industrial and Corporate videos making, Game assets development and many others. For better understanding of our services you can look for "Services" in the navigation bar at the top.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">How to get a quote?</div>
+          <div class="faq-answer">
+            You can click over the "Get a quote" button at the top right corner of the navigation bar and fill up your details with required inital information about the type of the work you want to get done.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+     document.querySelectorAll(".faq-item").forEach(item => {
+    item.addEventListener("click", () => {
+      item.classList.toggle("active");
+    });
+  });
+
+</script>
+</body>
+</html>

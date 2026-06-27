@@ -1,0 +1,341 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+/* Background Video */
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+  /* Header container */
+  header {
+    /*background-color:gray; /* light blue */
+    padding: 15px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+
+  /* Logo */
+  .logo img {
+    height: 74px;
+    width: 183px;
+    background-color: #f8fafc;
+  }
+
+  /* Navigation menu */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  nav ul li a:hover {
+    color: #00bfff;
+  }
+
+  /* Get a Quote button */
+  .quote-btn {
+    background-color: #00bfff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .quote-btn:hover {
+    background-color: #009fd4;
+  }
+
+
+
+
+
+.cinema-services {
+ /* background: #020617;*/
+  padding: 100px 8%;
+  color: #f8fafc;
+ margin-top: 38px;
+}
+
+.cinema-title {
+  font-size: 32px;
+  margin-bottom: 80px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Card */
+.cinema-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 18px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  transition: 0.4s ease;
+}
+
+/* Reverse layout */
+.cinema-card.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Image */
+.cinema-image {
+  width: 45%;
+  overflow: hidden;
+}
+
+.cinema-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+/* Content */
+.cinema-content {
+  width: 55%;
+  padding: 60px;
+}
+
+.cinema-tag {
+  display: inline-block;
+  padding: 6px 14px;
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  border-radius: 20px;
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+
+.cinema-content h2 {
+  font-size: 34px;
+  margin-bottom: 18px;
+}
+
+.cinema-content p {
+  font-size: 17px;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+/* Hover */
+.cinema-card:hover {
+  box-shadow: 0 30px 60px rgba(56,189,248,0.25);
+}
+
+.cinema-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .cinema-card,
+  .cinema-card.reverse {
+    flex-direction: column;
+  }
+
+  .cinema-image,
+  .cinema-content {
+    width: 100%;
+  }
+
+  .cinema-content {
+    padding: 40px;
+  }
+}
+
+.blue-highlight {
+  background: #38bdf8;
+  color: #020617;      /* dark text like your screenshot */
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
+
+
+.cta-section {
+  position: relative;
+  min-height: 80vh;
+  background: url("../ASSETS/About.mp4") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* dark overlay */
+.cta-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* content */
+.cta-content {
+  position: relative;
+  max-width: 900px;
+  padding: 20px;
+  color: #fff;
+  z-index: 2;
+}
+
+.cta-text {
+  font-size: 32px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+/* button */
+.cta-btn {
+  display: inline-block;
+  padding: 14px 36px;
+  background: #1fb6ff;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #0ea5e9;
+}
+/* Background video */
+.cta-bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width:768px){
+
+/* HEADER */
+
+header{
+padding:10px 20px;
+flex-direction:column;
+gap:10px;
+}
+
+.logo img{
+height:45px;
+width:auto;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+nav ul li a{
+font-size:16px;
+}
+
+.quote-btn{
+padding:8px 16px;
+font-size:14px;
+}
+
+/* SERVICES SECTION */
+
+.cinema-services{
+padding:60px 20px;
+margin-top:80px;
+}
+
+.cinema-title{
+font-size:24px;
+margin-bottom:40px;
+text-align:center;
+}
+
+/* CARDS */
+
+.cinema-card{
+flex-direction:column;
+margin-bottom:40px;
+}
+
+.cinema-card.reverse{
+flex-direction:column;
+}
+
+.cinema-image{
+width:100%;
+height:220px;
+}
+
+.cinema-content{
+width:100%;
+padding:25px;
+}
+
+.cinema-content h2{
+font-size:22px;
+}
+
+.cinema-content p{
+font-size:15px;
+}
+
+/* CTA SECTION */
+
+.cta-text{
+font-size:20px;
+}
+
+.cta-btn{
+padding:10px 22px;
+font-size:14px;
+}
+
+}
+@media (max-width:1024px){
+
+.cinema-card{
+flex-direction:column;
+}
+
+.cinema-image,
+.cinema-content{
+width:100%;
+}
+
+.cinema-content{
+padding:40px;
+}
+
+}
